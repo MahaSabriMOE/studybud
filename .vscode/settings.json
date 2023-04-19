@@ -1,0 +1,12 @@
+{
+ "folders": [
+  {
+   "path": "."
+  }
+ ],
+ "settings": {
+  "python.terminal.activateEnvInCurrentTerminal": true,
+  "python.defaultInterpreterPath": "C:/Users/MahaSabri/Desktop/studybud/myenv/Scripts/Activate.ps1"
+
+ }
+}
