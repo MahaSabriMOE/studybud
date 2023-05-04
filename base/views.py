@@ -5,7 +5,7 @@ from django.contrib.auth.decorators import login_required
 from django.db.models import Q
 from django.contrib.auth.models import User
 from django.contrib.auth import authenticate,login,logout
-
+from django.contrib.auth.forms import UserCreationForm
 from .models import Room, Topic
 from .forms import RoomForm
 
@@ -45,8 +45,9 @@ def logoutUser(request):
     return redirect ('home')
 
 def registerPage(request):
-    page='register'
-    return render(request, 'base/login_register.html')
+    
+    form =  UserCreationForm()
+    return render(request, 'base/login_register.html', {'form': form})
     
     
     
