@@ -14,7 +14,7 @@ from .forms import RoomForm
 # Create your views here.
 
 def loginPage(request):
-    page='login'
+    page ='login'
     if request.user.is_authenticated:
         return redirect('home')
     
@@ -37,7 +37,7 @@ def loginPage(request):
              messages.error(request,'username or password Does Not Exist !')
              
                       
-    context= {'page': login}
+    context= {'page': page}
     return render(request, 'base/login_register.html' , context)
 
 def logoutUser(request):
